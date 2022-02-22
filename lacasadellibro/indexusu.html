@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosprincipal.css" type="text/css">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>>
+    <title>Lacasadellibro</title>
+
+</head>
+<header>
+
+</header>
+
+<body>
+    <script>
+        //http://www.sidar.org/traducciones/wcag20/es/comprender-wcag20/intro.html 
+        //http://accesibilidadweb.dlsi.ua.es/?menu=principios-2.1
+        function modoaccesible() {
+    
+    
+            $("#cegato").addClass("clasecegato");
+            $("#cegato2").addClass("clasecegato");
+            $("aside").addClass("clasecegato");
+            $("button").addClass("clasecegato");
+            $("a").addClass("clasecegato");
+    
+    
+    
+        }
+    
+    
+        function intronombre() {
+            nombre = prompt("Como te llamas?");
+        }
+        intronombre();
+        frasedeldia(nombre);
+        fecha();
+        cambionombre(nombre);
+    
+    
+    
+    
+        function frasedeldia(nombre) {
+            aleatorio = Math.floor(Math.random() * 11);
+            switch (aleatorio) {
+    
+                case 1:
+                    alert('Hola ' + nombre + ' ¿sabías que...? “Algunos libros son probados, otros devorados, poquísimos masticados y digeridos”Sir Francis Bacon.');
+                    break;
+                case 2:
+                    alert('Hola ' + nombre + ' ¿sabías que...? “Allí donde se queman los libros, se acaba por quemar a los hombres”. Heinrich Heine.');
+                    break;
+                case 3:
+                    alert('Hola ' + nombre + ' ¿sabías que...? “Aprender a leer es lo más importante que me ha pasado en la vida”. Mario Vargas Llosa.');
+                    break;
+                case 4:
+                    alert('Hola ' + nombre + ' ¿sabías que...? “Cuanto menos se lee, más daño hace lo que se lee”. Miguel de Unamuno."');
+                    break;
+                case 5:
+                    alert('Hola ' + nombre + ' ¿sabías que...? “El libro es fuerza, es valor, es fuerza, es alimento; antorcha del pensamiento y manantial del amor”. Rubén Darío.');
+                    break;
+                case 6:
+                    alert('Hola ' + nombre + ' ¿sabías que...? “El que lee mucho y anda mucho, ve mucho y sabe mucho”. Miguel de Cervantes');
+                    break;
+                case 7:
+                    alert('Hola ' + nombre + ' ¿sabías que...? “La escritura es la pintura de la voz”. Voltaire.');
+                    break;
+                case 8:
+                    alert('Hola ' + nombre + ' ¿sabías que...? “La literatura es siempre una expedición a la verdad”. Franz Kafka.');
+                    break;
+                case 9:
+                    alert('Hola ' + nombre + ' ¿sabías que...? “La pluma es la lengua del alma”. Miguel de Cervantes.');
+                    break;
+                case 10:
+                    alert('Hola ' + nombre + ' ¿sabías que...? “Un hogar sin libros es como un cuerpo sin alma”. Cicerón.');
+                    break;
+            }
+        }
+    
+        function fecha() {
+            const tiempoTranscurrido = Date.now();
+            var hoy = new Date(tiempoTranscurrido);
+            hoy.toDateString();
+            document.getElementById("piepagina").innerHTML = "Desarrollado por nosotros " + hoy;
+    
+        }
+        function cambionombre(nombre) {
+    
+            document.getElementById("nombre1").innerHTML = ("user logged as'" + nombre + "'");
+    
+        }
+        function nodisponible() {
+    
+            var nodispo = "El libro solicitado no está disponible le notificaremos cuando lo tengamos en stock";
+            alert(nodispo);
+        }
+    
+        function busca() {
+            var librobuscado = document.getElementById("busqueda").value;
+    
+    
+            var buscador = "El libro  " + librobuscado + " no se ha encontrado";
+            alert(buscador);
+        }
+    
+    
+    
+    </script>
+
+
+
+
+    <h1 alt="La casa del libro">LA CASA DEL LIBRO </h1> ;
+    <img class="banner" src="banner.png" alt="imagenlibreriaprincipal" style="width: 100%; height: 180px;">
+    <nav>
+        <ul>
+            <li id="nombre1"><strong>LA CASA DEL LIBRO </strong> </li>
+            <li><a href="indexinvitado.html" alt="accesologin">Logout</a></li>
+            
+            <li><a href="Formulario_registro.html" alt="accesoformulario">Registrate</a></li>
+            <li><a href="contacto.html" alt="accesoacontacto">Contacta con nosotros</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <div class="principal" id="cegato">
+            <section class="art1">
+                <img class="arti" src="libro1.jfif" alt="imagenlibro1" width="250" height="280">
+                <p>Titulo del libro!</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+
+                <img class="arti" src="libro2.jpg" alt="imagenlibro2" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+                <img class="arti" src="libro3.jpg" alt="imagenlibro3" width=" 250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+                <img class="arti" src="libro4.jpg" alt="imagenlibro4" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+                </br>
+            </section>
+            </section>
+            </section>
+            <section class="art1">
+                <img class="arti" src="libro1.jfif" alt="imagenlibro1" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+
+                <img class="arti" src="libro2.jpg" alt="imagenlibro2" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" alt="imagenlibro3" class=claseBoton> Comprar</button>
+                <img class="arti" src="libro3.jpg" alt="imagenlibro3" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+                <img class="arti" src="libro4.jpg" alt="imagenlibro4" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+
+                </br>
+
+
+            </section>
+            <section class="art1">
+                <img class="arti" src="libro1.jfif" alt="imagenlibro1" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+
+                <img class="arti" src="libro2.jpg" alt="imagenlibro2" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+                <img class="arti" src="libro3.jpg" alt="imagenlibro3" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+                <img class="arti" src="libro4.jpg " alt="imagenlibro4" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+
+
+
+                </br>
+
+            </section>
+            <section class="art1">
+                <img class="arti" src="libro1.jfif" alt="imagenlibro1" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+
+                <img class="arti" src="libro2.jpg" alt="imagenlibro2" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+                <img class="arti" src="libro3.jpg" alt="imagenlibro3" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+                <img class="arti" src="libro4.jpg" alt="imagenlibro4" width="250" height="280">
+                <p>Titulo del libro</p>
+                <p>PVP </p>
+                <button onclick="nodisponible()" alt="botoncompra" class=claseBoton> Comprar</button>
+
+
+
+                </br>
+
+                <section>
+
+                </section>
+        </div>
+
+    </main>
+    <aside id="cegato2">
+        <p> CATEGORIAS></p>
+        <p><a href="#" alt="clasehistoria">Historia</a> </p>
+        <p><a href="#" alt="clasenovela">Novelas</a> </p>
+        <p><a href="#" alt="clasemanuales">Manuales</a> </p>
+        <p><a href="#" alt="claseclasicos">Clasicos</a> </p>
+        <p><a href="#" alt="claseaprendizaje">Aprendizaje</a> </p>
+        <p><a href="#" alt="claseautoayuda">Autoayuda</a> </p>
+        <p> <a href="# " alt="claseinfantil">Infantil</a></p>
+        <p><a href="#" alt="clasebelicos">Bélicos</a> </p>
+
+
+
+        <p> <label for="busqueda" alt="busqueda" >Búsqueda de libros:</label>
+             <input type="search" id="busqueda" name="busquedalibro" placeholder="Título del libro...">
+
+            <button onclick="busca()" alt="botonbusqueda" class="claseBoton"> Buscar</button>
+
+        </p>
+
+        <p>
+
+            <button onclick="modoaccesible()" alt="modoaccesible" class="claseBoton"> Modo accesible</button>
+        </p>
+        <p><a href="http://www.w3.org/WAI/WCAG1AAA-Conformance" title="Explicación del Nivel Triple-A de 
+	Conformidad">
+                <img height="32" width="88" src="http://www.w3.org/WAI/wcag1AAA" alt="Icono de conformidad con el Nivel Triple-A, 
+	de las Directrices de Accesibilidad para el 
+	Contenido Web 1.0 del W3C-WAI"></a>
+            </footer>
+        </p>
+        </form>
+
+    </aside>
+
+    <footer>
+        <p id="piepagina">Desarrolado por nosotros</p>
+
+
+</body>
+
+
+
+
+</html>

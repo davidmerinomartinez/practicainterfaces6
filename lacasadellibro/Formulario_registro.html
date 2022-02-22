@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registro</title>
+	<meta charset="utf-8" />
+	<script src="registro.js"></script>
+	<link rel="stylesheet" type="text/css" href="registro.css">
+	</link>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:ital,wght@0,600;1,400&family=Zen+Kurenaido&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="imagen">
+
+		<button id="interrogante" type="button" onclick="tomalaInfo()">?</button>
+
+		<div id="container">
+
+			<form class="form" action="index.html" onsubmit="return compararPass()" name="formDatosPersonales">
+
+				<div class="cansado">
+
+					<span>¿Ya estás registrado?</span>
+					<button class="boton" type="button"><a id="enlace" href="lacasadellibromk2.html">Inicie
+							sesión</a></button>
+					<p id="error">Da igual lo que ponga.</p>
+
+				</div>
+
+				<div>
+
+					<div class="label">
+
+						<label for="nombre">Nombre completo*</label>
+
+						<label for="email">Email*</label>
+
+						<label for="edad">Indique su fecha de nacimiento*</label>
+
+						<label for="pass">Introduzca su contraseña*</label>
+
+						<label for="pass2">Vuelva a introducir su contraseña*</label>
+
+					</div>
+
+					<div class="input">
+
+						<input class="caja" type="text" name="nombre" id="nombre" minlength="3" required />
+
+						<input class="caja" type="email" name="email" id="email" required />
+
+						<input class="caja" type="date" name="edad" id="edad" required>
+
+						<input class="caja" type="password" name="pass" id="pass" required minlength="6" />
+
+						<input class="caja" type="password" name="pass2" id="pass2" required minlength="6">
+
+					</div>
+
+				</div>
+
+				<div class="cansado">
+
+					<button class="boton" type="submit">Registrate</button>
+
+				</div>
+
+				<div class="muyCansado">
+
+					<label for="condiciones"><a href="https://policies.google.com/terms?hl=es" target="_blank">Condiciones de uso</a></label>
+
+					<input type="checkbox" name="condiciones" id="condiciones" required>
+
+				</div>
+
+			</form>
+		</div>
+
+	</div>
+
+	<footer>
+
+		La casa del libro mk2 || Todos los derechos reservados &copy;
+
+	</footer>
+
+</body>
+
+</html>

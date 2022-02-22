@@ -1,0 +1,57 @@
+body{
+    background-image: url("fondologin.jpg");
+}
+aside{
+    background-color: yellow;
+    float: right;
+    width: 15%;
+    position: sticky;
+    text-align: center;
+    margin-right: 10%;
+    
+    
+}
+form{
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb;
+    padding-left: 30px;
+    
+}
+#titulo{
+text-align: center;
+background-color: yellow;
+}
+#enviar, #borrar{
+    width: 45%;
+    height: auto;
+}
+#Contraseña{
+    width: 90%;
+    height: auto;
+}
+#Usuario{
+    width: 90%;
+    height: auto;
+}
+a{
+    color: black;
+    
+}
+footer{
+    text-align: center;
+    background-color: yellow;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    
+}
+li{
+    padding: 2%;
+    padding-bottom: 0%;
+}
